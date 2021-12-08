@@ -1,0 +1,25 @@
+
+/* POST FORM */
+#post{
+    display: none;
+
+    z-index: 1000;
+
+    padding: 20px;
+    background: #000000;
+    color: #ffee00;
+    text-align: center;
+}
+#post h3{
+    font-family: monospace;
+    color: aqua;
+}
+#post input, #post textarea{
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+}
+#post img{
+    width: 100%;
+}
+

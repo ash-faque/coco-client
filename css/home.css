@@ -1,0 +1,64 @@
+
+/* BOARDS */
+.boards{
+    padding: 10px;
+    border: 2px solid var(--black);
+
+    overflow: hidden;
+}
+.boards ul{
+    list-style: none;
+}
+.boards ul h3{
+    background: var(--d-grey);
+    color: var(--blue);
+    border-bottom: 5px solid var(--blue);
+
+    margin-bottom: 20px;
+    padding: 5px;    
+
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.boards ul li{
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+
+    margin: 10px 0;
+
+    display: flex;
+
+    word-wrap: break-word;
+
+    background: var(--grey);
+    color: var(--blue);
+}
+.boards ul li:hover{
+    filter: brightness(1.5);
+}
+
+.boards ul li h5{
+    text-align: center;
+    font-size: small;
+    font-family: monospace;
+    font-weight: 900;
+
+    width: 20%;
+    padding: 5px 10px;
+
+    background: var(--yellow);
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+.boards ul li span{
+    float: right;
+    width: 80%;
+    padding: 5px 0 5px 10px;
+
+    font-size: xx-small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    
+    background: var(--d-grey);
+}

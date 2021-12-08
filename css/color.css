@@ -1,0 +1,23 @@
+/* COLORS */
+
+:root{
+    --grey: #555555;
+    --d-grey: #2e2e2e;
+
+    --white: #ffffff;
+    --black: #222222;
+
+    --green: #4eff22;
+    --d-green: #065800;
+    
+    --yellow: #ffc115;
+    --d-yellow: #aa8b00;
+
+    --blue: #1fc0ff;
+    --d-blue: #002c5f;
+
+    --red: #ff2020;
+    --d-red: #5e0000;
+    
+    
+}

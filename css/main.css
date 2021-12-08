@@ -1,0 +1,144 @@
+/* BASIC */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--grey);
+    color: var(--black);
+}
+
+/* HEADER & FOOTER */
+header, footer{
+
+    width: 100%;
+
+    overflow: hidden;
+    user-select: none;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    background: var(--black);
+    color: var(--blue);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100px;
+}
+header img{
+    height: 80px;
+    width: 80px;
+    filter: drop-shadow(0 0 10px #7bc9dd);
+}
+header div:first-child{ 
+    text-align: right; 
+}
+footer{
+    padding: 20px;
+    text-align: center;
+}
+footer div div{
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+footer p{
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    user-select: none;
+    cursor: pointer;
+
+    background: #2c2c2c;
+    padding: 5px;
+}
+footer p:hover{
+    filter: brightness(2);
+}
+
+
+/* MAIN */
+main{
+    width: clamp(240px, 100%, 720px);
+    min-height: calc(100vh - 200px);
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+
+/* MASK */
+.mask{
+    overflow: hidden;
+    user-select: none;
+    cursor: progress;
+
+    z-index: 10000;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: monospace;
+    background: #000000c0;
+    color: #ffffff;
+    
+    
+    display: none;
+}
+.mask div{
+
+    width: 50vh;
+    height: 50vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.mask div h5{
+    font-size: 80px;
+    animation: rocket 500ms ease-in-out infinite;
+}
+@keyframes rocket {
+    0%{
+        transform: translate(-300px, 300px);
+    }
+    30%{
+        transform: translate(-50px, 50px);
+    }
+    70%{
+        transform: translate(50px, -50px);
+    }
+    100%{
+        transform: translate(300px, -300px);
+    }
+}
+.mask h6{
+    color: #ff0000;
+    font-size: 80px;
+    position: absolute;
+    animation: pulse 100ms ease-in-out infinite;
+}
+@keyframes pulse {
+    0%{
+        opacity: 0.0;
+    }
+    100%{
+        opacity: 1.0;
+    }
+}
